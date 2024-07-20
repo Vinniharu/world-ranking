@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  outputDirectory = "dist"
+
+[dev]
+  command = "npm run dev"
+
+[[redirects]]
+  source = "/(.*)"
+  destination = "/index.html"
+  status = 200
+
+[env]
+  VITE_APP_ENV = "production"
